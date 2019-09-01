@@ -1,0 +1,22 @@
+uuid: 309ff43e-cffe-494f-9db9-c538e1b0308a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tp
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: tp_messages
+theme: tp
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

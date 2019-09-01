@@ -1,0 +1,50 @@
+header {
+  background-color: rgba(255,255,255, 1) !important;
+  transition: background-color 0.5s ease;
+  border: 0 !important;
+
+  .navbar-nav {
+    @media (min-width: $grid-float-breakpoint) {
+      float: right;
+    }
+  }
+
+  .menu {
+    li {
+      & > a {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $font-color-menu !important;
+        padding: 0;
+        margin: 0 25px 25px 25px;
+        background-color: transparent !important;
+      }
+
+      border-top: 0 solid transparent;
+      &:before {
+        display:block;
+        content: '';
+        border-top: solid 4px $font-color-menu;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        padding-bottom: 21px;
+        //margin-top: -2px;
+      }
+
+      &:hover:before {
+        transform: scaleX(1);
+      }
+
+      &.is-active {
+        background-color: transparent !important;
+        &:before {
+          display:block;
+          content: '';
+          border-top: solid 4px $font-color-menu;
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}

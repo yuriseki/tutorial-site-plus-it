@@ -1,0 +1,20 @@
+uuid: 1460f30d-e94b-4e46-a451-ac8f477e9562
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tp
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: tp_page_title
+theme: tp
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

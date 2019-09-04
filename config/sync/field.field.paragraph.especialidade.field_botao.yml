@@ -1,0 +1,34 @@
+uuid: 92c60b83-b221-4d26-993a-720676b2f123
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_botao
+    - paragraphs.paragraphs_type.componente_botao
+    - paragraphs.paragraphs_type.especialidade
+  module:
+    - entity_reference_revisions
+id: paragraph.especialidade.field_botao
+field_name: field_botao
+entity_type: paragraph
+bundle: especialidade
+label: Botao
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      componente_botao: componente_botao
+    target_bundles_drag_drop:
+      componente_botao:
+        enabled: true
+        weight: 3
+      especialidade:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

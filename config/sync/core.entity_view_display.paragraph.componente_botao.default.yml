@@ -1,0 +1,71 @@
+uuid: 8e99a8f4-88bc-495e-96e0-009e688e2708
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.componente_botao.field_cor_da_fonte
+    - field.field.paragraph.componente_botao.field_css
+    - field.field.paragraph.componente_botao.field_link
+    - field.field.paragraph.componente_botao.field_modelo
+    - field.field.paragraph.componente_botao.field_tamanho
+    - field.field.paragraph.componente_botao.field_titulo
+    - paragraphs.paragraphs_type.componente_botao
+  module:
+    - link
+    - options
+id: paragraph.componente_botao.default
+targetEntityType: paragraph
+bundle: componente_botao
+mode: default
+content:
+  field_cor_da_fonte:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_css:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_modelo:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_tamanho:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_titulo:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

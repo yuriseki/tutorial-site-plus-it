@@ -1,0 +1,33 @@
+uuid: da20c971-eb94-4e2e-8c37-b87cdc99323f
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_tamanho
+field_name: field_tamanho
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: lg
+      label: Large
+    -
+      value: df
+      label: Default
+    -
+      value: sm
+      label: Small
+    -
+      value: xs
+      label: Mini
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

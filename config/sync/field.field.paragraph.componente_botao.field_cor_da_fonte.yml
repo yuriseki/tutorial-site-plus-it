@@ -1,0 +1,19 @@
+uuid: 6cd20156-113c-410f-9740-ed6189acbf78
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cor_da_fonte
+    - paragraphs.paragraphs_type.componente_botao
+id: paragraph.componente_botao.field_cor_da_fonte
+field_name: field_cor_da_fonte
+entity_type: paragraph
+bundle: componente_botao
+label: 'Cor da fonte'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

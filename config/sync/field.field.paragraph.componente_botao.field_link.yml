@@ -1,0 +1,23 @@
+uuid: 63636973-e710-40cb-843e-12707502af17
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.componente_botao
+  module:
+    - link
+id: paragraph.componente_botao.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: componente_botao
+label: Link
+description: 'Url de destino'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

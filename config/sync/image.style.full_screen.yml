@@ -1,0 +1,23 @@
+uuid: 2cbdac1f-cf38-4a38-b017-346e8e112489
+langcode: en
+status: true
+dependencies: {  }
+name: full_screen
+label: 'Full Screen'
+effects:
+  c53cc2fb-5fdd-4dc9-8bb3-425d56fa048e:
+    uuid: c53cc2fb-5fdd-4dc9-8bb3-425d56fa048e
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: true
+  ff510749-a5ea-4ed7-a8b4-8ef51333f159:
+    uuid: ff510749-a5ea-4ed7-a8b4-8ef51333f159
+    id: image_crop
+    weight: 2
+    data:
+      width: 1920
+      height: 1080
+      anchor: center-center

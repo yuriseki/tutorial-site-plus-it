@@ -1,0 +1,19 @@
+uuid: ed094b48-5c69-4259-83c2-44428d02d05d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.especialidade
+id: paragraph.especialidade.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: especialidade
+label: Título
+description: 'Título da seção'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

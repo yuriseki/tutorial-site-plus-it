@@ -1,0 +1,51 @@
+uuid: c60e61e0-ae1c-44e1-9043-988b72711822
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_modelo
+field_name: field_modelo
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: Default
+    -
+      value: primary
+      label: Primary
+    -
+      value: success
+      label: Success
+    -
+      value: warning
+      label: Warning
+    -
+      value: danger
+      label: Danger
+    -
+      value: info
+      label: Info
+    -
+      value: black
+      label: Black
+    -
+      value: white
+      label: 'White Transparent'
+    -
+      value: white-bigger
+      label: 'White bigger'
+    -
+      value: none
+      label: None
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

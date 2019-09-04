@@ -1,0 +1,19 @@
+uuid: 75bdb30d-6e74-461b-b005-7011e8042713
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.componente_botao
+id: paragraph.componente_botao.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: componente_botao
+label: Título
+description: 'Texto do botão'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

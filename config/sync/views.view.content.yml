@@ -1,5 +1,5 @@
 uuid: 654ac6cd-fada-4809-bb5c-4e780e6eb631
-langcode: en
+langcode: pt-br
 status: true
 dependencies:
   module:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: tS8PbpJX90aRFC3-UTgXzdqkq7_2frk2pz4TMijEebM
 id: content
-label: Content
+label: Conteúdo
 module: node
 description: 'Find and manage content.'
 tag: default
@@ -29,13 +29,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrar
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
       pager:
         type: full
         options:
@@ -278,8 +278,8 @@ display:
           type: boolean
           settings:
             format: custom
-            format_custom_true: Published
-            format_custom_false: Unpublished
+            format_custom_true: Publicado
+            format_custom_false: 'Não publicado'
           plugin_id: field
           entity_type: node
           entity_field: status
@@ -312,7 +312,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operações
           exclude: false
           alter:
             alter_text: false
@@ -473,11 +473,11 @@ display:
             default_group_multiple: {  }
             group_items:
               1:
-                title: Published
+                title: Publicado
                 operator: '='
                 value: '1'
               2:
-                title: Unpublished
+                title: 'Não publicado'
                 operator: '='
                 value: '0'
           plugin_id: boolean
@@ -496,7 +496,7 @@ display:
           exposed: true
           expose:
             operator_id: langcode_op
-            label: Language
+            label: Idioma
             description: ''
             use_operator: false
             operator: langcode_op
@@ -534,7 +534,7 @@ display:
           group: 1
           entity_type: node
       sorts: {  }
-      title: Content
+      title: Conteúdo
       empty:
         area_text_custom:
           id: area_text_custom
@@ -559,7 +559,7 @@ display:
           1: AND
       display_extenders: {  }
     display_plugin: default
-    display_title: Master
+    display_title: Principal
     id: default
     position: 0
     cache_metadata:
@@ -578,20 +578,20 @@ display:
       path: admin/content/node
       menu:
         type: 'default tab'
-        title: Content
+        title: Conteúdo
         description: ''
         menu_name: admin
         weight: -10
         context: ''
       tab_options:
         type: normal
-        title: Content
+        title: Conteúdo
         description: 'Find and manage content'
         menu_name: admin
         weight: -10
       display_extenders: {  }
     display_plugin: page
-    display_title: Page
+    display_title: Página
     id: page_1
     position: 1
     cache_metadata:

@@ -42,4 +42,5 @@ docroot/sites/simpletest
 # simpletest
 
 docroot/.idea
+.idea
 logs

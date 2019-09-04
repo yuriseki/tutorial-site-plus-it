@@ -1,5 +1,5 @@
 uuid: f3d39893-c94b-4172-b8ca-69e93a5e870d
-langcode: en
+langcode: pt-br
 status: true
 dependencies:
   module:
@@ -22,7 +22,7 @@ tips:
   language-edit-langcode:
     id: language-edit-langcode
     plugin: text
-    label: 'Language code'
+    label: 'Código do idioma'
     body: '<p>You cannot change the code of a language on the site, since it is used by the system to keep track of the language.</p>'
     weight: 2
     attributes:

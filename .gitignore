@@ -41,5 +41,5 @@ docroot/sites/simpletest
 # Ignore SimpleTest multi-site environment.
 # simpletest
 
-docroot/.idea
+.idea
 logs

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,0CAA2C;EACzC,OAAO,EAAE,IAAI;EAEb,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,IAAI;EAEnB,gBAAgB,EAAE,IAAI;EACtB,MAAM,EAAE,cAAc;EAEtB,gEAAqB;IACnB,WAAW,EAAE,GAAG;EAGlB,gDAAM;IACJ,UAAU,EAAE,IAAI",
+"sources": ["../scss/tm_admin.scss"],
+"names": [],
+"file": "tm_admin.css"
+}

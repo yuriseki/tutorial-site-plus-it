@@ -1,0 +1,22 @@
+uuid: 8b57c475-4992-4207-84c6-299095d3b74d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tm_admin
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: tm_admin_content
+theme: tm_admin
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

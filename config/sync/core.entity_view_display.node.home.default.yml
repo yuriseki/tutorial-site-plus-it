@@ -1,0 +1,31 @@
+uuid: 03c44a92-d1db-4681-a4f9-575573a57785
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.home.field_especialidade
+    - node.type.home
+  module:
+    - entity_reference_revisions
+    - user
+id: node.home.default
+targetEntityType: node
+bundle: home
+mode: default
+content:
+  field_especialidade:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

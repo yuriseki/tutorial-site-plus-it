@@ -1,5 +1,5 @@
 uuid: 8c55ded5-b892-4a01-b23c-3493ba33b713
-langcode: en
+langcode: pt-br
 status: true
 dependencies:
   module:
@@ -19,7 +19,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Principal
     position: 0
     display_options:
       access:
@@ -40,13 +40,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrar
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
       pager:
         type: mini
         options:
@@ -59,10 +59,10 @@ display:
             next: 'Next ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Itens por página'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tudo -'
             offset: false
             offset_label: Offset
       style:
@@ -798,10 +798,10 @@ display:
             next: 'Next ›'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Itens por página'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tudo -'
             offset: false
             offset_label: Offset
       filters: {  }
@@ -1028,7 +1028,7 @@ display:
           exception:
             value: all
             title_enable: false
-            title: All
+            title: Tudo
           title_enable: true
           title: 'File usage information for {{ arguments.fid }}'
           default_argument_type: fixed

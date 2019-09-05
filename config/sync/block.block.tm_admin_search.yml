@@ -1,0 +1,22 @@
+uuid: d58bd6f8-30ec-495e-a53b-ec67524d9b12
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tm_admin
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: tm_admin_search
+theme: tm_admin
+region: sidebar_first
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

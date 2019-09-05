@@ -1,5 +1,5 @@
 uuid: ca8b2894-5e2c-40d9-aac0-2ef325f32565
-langcode: en
+langcode: pt-br
 status: true
 dependencies:
   module:
@@ -89,7 +89,7 @@ tips:
   views-ui-preview:
     id: views-ui-preview
     plugin: text
-    label: Preview
+    label: Pré-visualizar
     body: 'Show a preview of the view output.'
     weight: 10
     location: left

@@ -1,0 +1,19 @@
+uuid: c6871445-4bc0-451d-bcb4-7ad0fe6691fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitulo
+    - paragraphs.paragraphs_type.especialidade
+id: paragraph.especialidade.field_subtitulo
+field_name: field_subtitulo
+entity_type: paragraph
+bundle: especialidade
+label: Subtítulo
+description: 'Subtítulo da seção'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

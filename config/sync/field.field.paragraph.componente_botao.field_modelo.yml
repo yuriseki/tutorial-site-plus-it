@@ -1,0 +1,21 @@
+uuid: 32760690-13c1-4e07-aa18-ddbd1298e2fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_modelo
+    - paragraphs.paragraphs_type.componente_botao
+  module:
+    - options
+id: paragraph.componente_botao.field_modelo
+field_name: field_modelo
+entity_type: paragraph
+bundle: componente_botao
+label: Modelo
+description: 'Modelo do botão. <a href="/themes/custom/tp/#buttons" target="_blank">Ver modelos</a>'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

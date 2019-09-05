@@ -1,5 +1,5 @@
 uuid: 741386e0-ac1b-4023-8aff-c6effaebf51d
-langcode: en
+langcode: pt-br
 status: true
 dependencies:
   module:
@@ -19,7 +19,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Master
+    display_title: Principal
     position: 0
     display_options:
       access:
@@ -40,13 +40,13 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Filter
+          submit_button: Filtrar
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Reiniciar
+          exposed_sorts_label: 'Ordenar por'
           expose_sort_order: false
-          sort_asc_label: Asc
-          sort_desc_label: Desc
+          sort_asc_label: Ascendente
+          sort_desc_label: Decrescente
       pager:
         type: mini
         options:
@@ -56,10 +56,10 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Itens por página'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tudo -'
             offset: false
             offset_label: Offset
           tags:
@@ -151,7 +151,7 @@ display:
           field: nothing
           relationship: none
           group_type: group
-          admin_label: Icon
+          admin_label: Ícone
           label: ''
           exclude: false
           alter:
@@ -300,7 +300,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Type
+          label: Tipo
           exclude: false
           alter:
             alter_text: false
@@ -451,7 +451,7 @@ display:
           relationship: uid
           group_type: group
           admin_label: ''
-          label: User
+          label: Usuário
           exclude: false
           alter:
             alter_text: false
@@ -516,7 +516,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operations
+          label: Operações
           exclude: false
           alter:
             alter_text: false
@@ -572,7 +572,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Type
+            label: Tipo
             description: ''
             use_operator: false
             operator: type_op
@@ -694,7 +694,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Page
+    display_title: Página
     position: 1
     display_options:
       display_extenders: {  }

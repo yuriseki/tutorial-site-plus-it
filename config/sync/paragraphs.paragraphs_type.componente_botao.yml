@@ -1,0 +1,9 @@
+uuid: 7b3e378d-be4e-496d-a2d2-f410f2e37679
+langcode: en
+status: true
+dependencies: {  }
+id: componente_botao
+label: 'Componente: Botão'
+icon_uuid: null
+description: Botão
+behavior_plugins: {  }

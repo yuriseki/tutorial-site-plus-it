@@ -1,0 +1,38 @@
+uuid: 8ae9ca59-d819-4dfd-8b79-3b458f9c534c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagem_de_fundo
+    - paragraphs.paragraphs_type.especialidade
+  module:
+    - image
+id: paragraph.especialidade.field_imagem_de_fundo
+field_name: field_imagem_de_fundo
+entity_type: paragraph
+bundle: especialidade
+label: 'Imagem de fundo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: 1920x1080
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,22 @@
+uuid: 991c502a-614f-4727-a595-e83c2b501e87
+langcode: en
+status: true
+dependencies:
+  theme:
+    - tm_admin
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: tm_admin_local_tasks
+theme: tm_admin
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

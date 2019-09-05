@@ -1,0 +1,21 @@
+uuid: 4aae34a7-a07e-4722-bc93-5488554950c7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tamanho
+    - paragraphs.paragraphs_type.componente_botao
+  module:
+    - options
+id: paragraph.componente_botao.field_tamanho
+field_name: field_tamanho
+entity_type: paragraph
+bundle: componente_botao
+label: Tamanho
+description: 'Tamanho do botão'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

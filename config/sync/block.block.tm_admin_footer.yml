@@ -1,0 +1,27 @@
+uuid: e8ca2378-701b-4c3f-9d0c-2ee0625fbb88
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - tm_admin
+_core:
+  default_config_hash: 8zRjTNbfNAJ94lQpZDu6MkyD87GYJ2zpH9VQPVmRbcM
+id: tm_admin_footer
+theme: tm_admin
+region: footer
+weight: -5
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Footer menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

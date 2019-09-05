@@ -1,0 +1,22 @@
+uuid: 0abccc39-9703-449e-a823-e8c769dc4583
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tm_admin
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: tm_admin_powered
+theme: tm_admin
+region: content
+weight: -1
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

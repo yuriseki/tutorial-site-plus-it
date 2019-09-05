@@ -1,0 +1,34 @@
+uuid: 9735af77-5fec-4ed3-96db-c46c4abb1dd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_especialidade
+    - node.type.home
+    - paragraphs.paragraphs_type.especialidade
+  module:
+    - entity_reference_revisions
+id: node.home.field_especialidade
+field_name: field_especialidade
+entity_type: node
+bundle: home
+label: Especialidade
+description: 'Especialidades da Plus-IT'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      especialidade: especialidade
+    target_bundles_drag_drop:
+      componente_botao:
+        weight: 3
+        enabled: false
+      especialidade:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

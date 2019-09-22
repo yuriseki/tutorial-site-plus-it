@@ -1,0 +1,14 @@
+<section id="especialidades" style="background-image: url('{{ plusit.img_url }}')">
+  <div class="color-mask"></div>
+  <div class="content container col-sm-12">
+    <div class="subtitle wow bounceInRight" data-wow-delay="0.5s"><h4>{{ plusit.title }}</h4></div>
+    <div class="title wow bounceInLeft" data-wow-delay="0.5s"><h1>{{ plusit.subtitle }}</h1></div>
+    <div class="specialties rotate" style="visibility: hidden">
+    {% for specialty in plusit.specialties %}
+      <div class="specialty wow fadeIn" data-wow-delay="0.8s"><h1>{{ specialty.value }}</h1></div>
+    {% endfor %}
+    </div>
+    <div class="button wow fadeInUp" data-wow-delay="1s">{{ plusit.button }}</div>
+  </div>
+</section>
+<div id="especialidades-end"></div>

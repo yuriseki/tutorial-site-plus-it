@@ -6,3 +6,101 @@
  *
  * Place your custom PHP code in this file.
  */
+
+use Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException;
+use Drupal\Component\Plugin\Exception\PluginNotFoundException;
+use Drupal\file\Entity\File;
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\site_plus_util\Util;
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ *
+ * Add page template suggestion for each content type.
+ */
+function tp_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__' . $content_type;
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function tp_preprocess_field(&$variables) {
+  if (!isset($variables['element']['#field_name'])) {
+    return;
+  }
+  $field_name = $variables['element']['#field_name'];
+
+  // Home page.
+  if (isset($variables['element']['#bundle']) && isset($variables['element']['#entity_type']) && $variables['element']['#entity_type'] == 'node' && $variables['element']['#bundle'] == 'home') {
+
+    // Especialidade.
+    if ($field_name == 'field_especialidade') {
+      /** @var \Drupal\paragraphs\Entity\Paragraph $paragraph */
+      $paragraph = $variables['items'][0]['content']['#paragraph'];
+
+      try {
+        $file_id = $paragraph->get('field_imagem_de_fundo')
+                     ->getValue()[0]['target_id'];
+        $file = File::load($file_id);
+        $img_url = Util::getStylizedImageUrl(
+          $file,
+          Util::getFieldSettings('paragraph', 'especialidade',
+            'default', 'field_imagem_de_fundo')['image_style']
+        );
+      }
+      catch (InvalidPluginDefinitionException $e) {
+      }
+      catch (PluginNotFoundException $e) {
+      }
+
+      $btn_paragraph = Paragraph::load($paragraph->get('field_botao')
+                                         ->getValue()[0]['target_id']);
+
+      $values = [
+        'title' => [
+          '#markup' => $paragraph->get('field_titulo')->getValue()[0]['value'],
+        ],
+        'subtitle' => [
+          '#markup' => $paragraph->get('field_subtitulo')
+                         ->getValue()[0]['value'],
+        ],
+        'specialties' => $paragraph->get('field_especialidade')->getValue(),
+        'button' => Util::renderEntity($btn_paragraph),
+        'img_url' => $img_url,
+      ];
+
+      $variables['plusit'] = $values;
+    }
+
+  }
+
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function tp_preprocess_paragraph(&$variables) {
+  $content = $variables['content'];
+  $key = array_keys($content);
+  if (!isset($key[0])) return;
+  $bundle = isset($content[$key[0]]['#bundle']) ? $content[$key[0]]['#bundle'] : FALSE;
+
+  if ($bundle == 'componente_botao') {
+    $title = $content['field_titulo'];
+    $values = [
+      'title' => ['#markup' => trim(strip_tags(render($title)))],
+      'url' => $content['field_link'][0]['#url']->toString(),
+      'model' => 'btn-' . $content['field_modelo']['#items']->getValue()[0]['value'],
+      'size' => 'btn-' . $content['field_tamanho']['#items']->getValue()[0]['value'],
+      'css' => isset($content['field_css'][0]) ? $content['field_css'][0]['#context']['value'] : '',
+      'font_color' => isset($content['field_cor_da_fonte'][0]) ? $content['field_cor_da_fonte'][0]['#context']['value'] : '',
+    ];
+
+    $variables['plusit'] = $values;
+  }
+
+}

@@ -1,0 +1,6 @@
+{% if plusit.font_color %}
+  {% set font_color = 'style=color:#' ~ plusit.font_color %}
+{% endif %}
+<div class="component-button">
+  <a class="button btn {{ plusit.model }} {{ plusit.size }} {{ plusit.css }}" href="{{ plusit.url }}" {{ font_color }}>{{ plusit.title }}</a>
+</div>

@@ -1,0 +1,58 @@
+#especialidades {
+  height: calc(100vh - 72px);
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $gray-lighter;
+
+  .color-mask {
+    display: none;
+    background-color: rgba(0, 0, 0, .3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .title, .specialties {
+      h1 {
+        color: $brand-danger;
+        //text-shadow: rgba(255, 82, 70, .5) 1px 0 5px;
+        font-size: 26px !important;
+        text-transform: uppercase;
+        font-weight: 900;
+        margin-top: 0;
+      }
+    }
+
+    .title {
+
+    }
+
+    .subtitle {
+      font-weight: 100;
+    }
+
+    h4 {
+      font-size: 26px;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-shadow: rgba(0, 0, 0, .5) 1px 0 10px;
+    }
+
+    .fale-conosco {
+
+    }
+  }
+}

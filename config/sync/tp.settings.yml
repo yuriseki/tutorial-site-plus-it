@@ -6,11 +6,6 @@ favicon:
   path: ''
   url: 'http://dev.siteplus/themes/custom/tp/favicon.ico'
   use_default: true
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
 logo:
   path: themes/custom/tp/logo.png
   url: ''
@@ -23,4 +18,9 @@ cdn_cache_ttl_assets: '0'
 cdn_cache_ttl_library: '0'
 reset_http_request_cache: ''
 table: ''
-langcode: pt-br
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+navbar_position: fixed-top

@@ -1,0 +1,5 @@
+name: 'Site Plus Util'
+type: module
+description: 'Site plus utilities'
+core: 8.x
+package: 'Custom'

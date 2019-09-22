@@ -1,4 +1,4 @@
-uuid: 04f07175-8cad-4538-ab0c-667cc71f9a6f
+uuid: b1fbdf81-5889-45b4-920b-906ad53408dc
 langcode: en
 status: true
 dependencies:
@@ -10,8 +10,8 @@ third_party_settings:
     parent: ''
 name: Home
 type: home
-description: 'Home Page'
+description: 'Home page'
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: true
+display_submitted: false

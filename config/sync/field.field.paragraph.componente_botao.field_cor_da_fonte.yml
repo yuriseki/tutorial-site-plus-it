@@ -1,4 +1,4 @@
-uuid: 6cd20156-113c-410f-9740-ed6189acbf78
+uuid: 838f5e3b-3ece-4c85-b25f-ef28b20b0bb9
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ field_name: field_cor_da_fonte
 entity_type: paragraph
 bundle: componente_botao
 label: 'Cor da fonte'
-description: ''
+description: 'Valor hexadecimal para o caso de a cor da fonte ser diferente do padrão.'
 required: false
 translatable: false
 default_value: {  }

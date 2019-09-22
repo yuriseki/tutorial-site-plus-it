@@ -1,4 +1,4 @@
-uuid: 3d410e49-ca44-497d-a97a-1e46ecf26f3e
+uuid: aa5f266d-d388-4afd-97e2-f374853f3ab7
 langcode: en
 status: true
 dependencies:
@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.especialidade.field_imagem_de_fundo
     - field.field.paragraph.especialidade.field_subtitulo
     - field.field.paragraph.especialidade.field_titulo
+    - image.style.full_screen
     - paragraphs.paragraphs_type.especialidade
   module:
     - entity_reference_revisions
@@ -19,16 +20,16 @@ mode: default
 content:
   field_botao:
     type: entity_reference_revisions_entity_view
-    weight: 3
-    label: above
+    weight: 4
+    label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
     region: content
   field_especialidade:
-    weight: 4
-    label: above
+    weight: 3
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -36,16 +37,16 @@ content:
     region: content
   field_imagem_de_fundo:
     weight: 2
-    label: above
+    label: hidden
     settings:
-      image_style: ''
+      image_style: full_screen
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
   field_subtitulo:
     weight: 1
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -53,7 +54,7 @@ content:
     region: content
   field_titulo:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }

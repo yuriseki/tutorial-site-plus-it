@@ -1,4 +1,4 @@
-uuid: 92c60b83-b221-4d26-993a-720676b2f123
+uuid: 31309356-ce97-4689-abbf-fcdafac9961f
 langcode: en
 status: true
 dependencies:
@@ -12,7 +12,7 @@ id: paragraph.especialidade.field_botao
 field_name: field_botao
 entity_type: paragraph
 bundle: especialidade
-label: Botao
+label: Botão
 description: ''
 required: false
 translatable: false

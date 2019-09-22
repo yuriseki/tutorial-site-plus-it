@@ -1,4 +1,4 @@
-uuid: 9735af77-5fec-4ed3-96db-c46c4abb1dd7
+uuid: e37d5533-3756-443c-b0ec-fc3686fe66c9
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ field_name: field_especialidade
 entity_type: node
 bundle: home
 label: Especialidade
-description: 'Especialidades da Plus-IT'
+description: 'Especialidades da empresa'
 required: false
 translatable: false
 default_value: {  }

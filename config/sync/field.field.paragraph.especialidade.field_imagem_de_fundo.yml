@@ -1,4 +1,4 @@
-uuid: 8ae9ca59-d819-4dfd-8b79-3b458f9c534c
+uuid: e41c5a1e-699f-4b68-8849-57647523ac4e
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: paragraph.especialidade.field_imagem_de_fundo
 field_name: field_imagem_de_fundo
 entity_type: paragraph
 bundle: especialidade
-label: 'Imagem de fundo'
+label: 'Imagem de Fundo'
 description: ''
 required: false
 translatable: false

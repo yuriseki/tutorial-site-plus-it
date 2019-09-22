@@ -1,4 +1,4 @@
-uuid: 13e582d6-a7af-4b70-8298-c62083f648e6
+uuid: 05944ca5-5466-487c-ae71-861711e01880
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ field_name: field_especialidade
 entity_type: paragraph
 bundle: especialidade
 label: Especialidade
-description: 'Cadastrar especialidades'
+description: ''
 required: false
 translatable: false
 default_value: {  }

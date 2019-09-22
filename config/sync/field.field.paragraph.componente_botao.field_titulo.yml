@@ -1,4 +1,4 @@
-uuid: 75bdb30d-6e74-461b-b005-7011e8042713
+uuid: 5efda250-e58d-42e8-a023-260eb955e3e9
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: paragraph.componente_botao.field_titulo
 field_name: field_titulo
 entity_type: paragraph
 bundle: componente_botao
-label: Título
+label: Titulo
 description: 'Texto do botão'
 required: true
 translatable: true

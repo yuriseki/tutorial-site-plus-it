@@ -1,4 +1,4 @@
-uuid: ed094b48-5c69-4259-83c2-44428d02d05d
+uuid: f735e68d-6f8a-4f54-9f1f-df8281a551df
 langcode: en
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: paragraph.especialidade.field_titulo
 field_name: field_titulo
 entity_type: paragraph
 bundle: especialidade
-label: Título
+label: Titulo
 description: 'Título da seção'
 required: false
 translatable: false

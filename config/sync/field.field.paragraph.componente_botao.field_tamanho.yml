@@ -1,4 +1,4 @@
-uuid: 4aae34a7-a07e-4722-bc93-5488554950c7
+uuid: 6275a20e-cf52-4b05-ae29-1016b200a1c0
 langcode: en
 status: true
 dependencies:
@@ -13,7 +13,7 @@ entity_type: paragraph
 bundle: componente_botao
 label: Tamanho
 description: 'Tamanho do botão'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

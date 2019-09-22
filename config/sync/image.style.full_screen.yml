@@ -1,20 +1,20 @@
-uuid: 2cbdac1f-cf38-4a38-b017-346e8e112489
+uuid: a8a43642-f015-4185-a49f-dbe2d58b282b
 langcode: en
 status: true
 dependencies: {  }
 name: full_screen
 label: 'Full Screen'
 effects:
-  c53cc2fb-5fdd-4dc9-8bb3-425d56fa048e:
-    uuid: c53cc2fb-5fdd-4dc9-8bb3-425d56fa048e
+  860e2552-8fe4-42d5-9bcf-ff403e8fd83c:
+    uuid: 860e2552-8fe4-42d5-9bcf-ff403e8fd83c
     id: image_scale
     weight: 1
     data:
       width: 1920
       height: null
-      upscale: true
-  ff510749-a5ea-4ed7-a8b4-8ef51333f159:
-    uuid: ff510749-a5ea-4ed7-a8b4-8ef51333f159
+      upscale: false
+  e832ef25-a565-423c-86ea-ec9daa373cd2:
+    uuid: e832ef25-a565-423c-86ea-ec9daa373cd2
     id: image_crop
     weight: 2
     data:

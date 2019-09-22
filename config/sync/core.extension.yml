@@ -37,6 +37,7 @@ module:
   rdf: 0
   search: 0
   shortcut: 0
+  site_plus_util: 0
   system: 0
   taxonomy: 0
   text: 0
